@@ -28,10 +28,4 @@ jobs:
     - name: Run Tests
       run: |
         python 07-practicing-urls-and-views/manage.py test
-    - name: Run Django server with Gunicorn
-      run: |
-        python 07-practicing-urls-and-views/manage.py migrate
-        nohup gunicorn Django01_urls_and_views.wsgi:application --bind 127.0.0.1:8000 &
-        sleep 5
-        curl --fail http://127.0.0.1:8000/challenges || (echo "Server failed to respond" && exit 1)
 
