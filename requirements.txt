@@ -5,3 +5,4 @@ Pillow>=10.2.0         # For image uploads
 whitenoise>=6.6.0      # For serving static files in production
 dj-database-url>=2.1.0 # For flexible database config via env vars
 python-dotenv>=1.0.1   # For environment variable management
+gunicorn>=21.2.0
